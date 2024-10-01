@@ -5,4 +5,6 @@ A small project by me and my friends for collage<br>
 Team Name :-<br>
 Ankit Kharwar<br>
 Asha Chhetri<br>
-Nurullah
+Nurullah<br>
+Shreyashri Ghosh<br>
+Nikhil Gupta<br>
