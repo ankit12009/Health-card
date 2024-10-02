@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url("images/h3.jpg") no-repeat center center/cover;
+    color: rgb(14, 15, 15);
+    /* height: 500px; */
+    padding: 100px 20px;
+    text-align: center;
+    object-fit: cover;
+}
+
+.benefits, .plans, .testimonials, .cta-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.benefit-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    height: 200px;
+    /* margin: 80px; */
+    padding: 20px;
+    
+}
+
+.plan-card {
+    border: 1px solid #007BFF;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #28A745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+footer {
+    background: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}

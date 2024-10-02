@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image:url(Health-card/industrial_project/images/h4.jpg);
+    background-image:url("images/h4.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
