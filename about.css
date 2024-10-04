@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* headersection */
+.nav {
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.nav a {
+    color: #333;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav a:hover {
+    color: #007BFF;
+}
+.nav a.active {
+    color: #007BFF;
+}
+
+/* banner section */
+.banner {
+    background:url("https://i.ibb.co/NjTS6ZK/abou-banner.jpg");
+    color: #fff;
+    padding: 3s0px 0;
+    text-align: right;
+    position: relative;
+}
+.banner h1 {
+    margin:10px;
+    font-size: 50px;
+    text-align:right;
+    padding-right: 40px;
+}
+.banner p {
+    margin: 0;
+    font-size: 18px;
+    text-align:right;
+    padding: 45px;
+}
+
+/* about section  */
+.about-heading h1{
+    text-decoration: underline;
+    font-size: 50px;
+    margin-top: 3%;
+    text-align: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding-top: 6%;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+.image img {
+    max-width: 100%;
+    border-radius: 8px;
+    width:600px;
+    height:400px;
+    margin-top: 20px;
+    margin-left: 15%;
+}
+.content {
+    flex: 2;
+    padding: 0 40px;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+.content h2 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 11%;
+    font-family: Tahoma;
+    font-size: 30px;
+    color: #666;
+}
+.content p {
+    color: #8d8282;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 10%;
+    font-family:'Gill Sans';
+    line-height: 22px;
+    padding: 10px;
+    margin-bottom: 6%;
+}
+
+/* Context section */
+
+.container {
+    display: flex;
+    justify-content:space-between;
+    padding: 0 20px;
+    margin-bottom: 6%;
+}
+.left-section {
+    width: 40%;
+}
+.left-section h1 {
+    font-size: 36px;
+    color: #333;
+}
+.left-section h2 {
+    font-size: 24px;
+    color: #666;
+    margin-top: 10px;
+}
+.features {
+    list-style: none;
+    padding: 10px;
+    margin: 20px 10px;
+}
+.left-section .features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #666;
+}
+.features li .number {
+    background-color:#007BFF;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.left-section img{
+    width: 100%;
+    height:300px;
+}
+.right-section {
+    width: 55%;
+    text-align: center;
+}
+.right-section img {
+    max-width: 100%;
+    border-radius: 5px;
+    height:400px;
+    width:450px;
+}
+.right-section .best-for-you {
+    background-color: #007BFF;
+    font-family:'Gill Sans';
+    text-align: left;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.right-section .best-for-you h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.right-section .best-for-you p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: rgb(220, 223, 226);
+}
+/* footer section */
+footer {
+    background: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}

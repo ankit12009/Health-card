@@ -4,9 +4,9 @@ body {
     padding: 0;
 }
 
-header {
-    background: #007BFF;
-    color: white;
+header .logo{
+    background:#007BFF;
+    color: rgb(22, 21, 21);
     padding: 1em 0;
     text-align: center;
 }
@@ -27,7 +27,7 @@ nav a {
 }
 
 .hero {
-    background: url("images/h3.jpg") no-repeat center center/cover;
+    background: url("images/h4.jpg") no-repeat center center/cover;
     color: rgb(14, 15, 15);
     /* height: 500px; */
     padding: 100px 20px;
