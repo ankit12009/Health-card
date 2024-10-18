@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEALTH CARD</title>
+    <script src="https://kit.fontawesome.com/8ab7b379a5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="signup.css">
     
 </head>
@@ -13,37 +14,42 @@
      <div class="registerform-popup">
         <span class="close-btn symbol"><a href="http://localhost/git/Health-card/index.html">X</a></span>
         <div class="form-box">
-            <!--We dont Need Double login and signup link-->
-            <!-- <div class="btn-box">
-                 <button class=" btn btn1"><a href="file:///C:/xampp/htdocs/git/Health-card/industrial_project/login.html"><p>LOGIN</p></a></button> 
-                <button class=" btn btn2" >SIGNUP</button> 
-            </div> -->
-
-            <h2>SIGNUP</h2>
+            
             <form action="#">
-                <div class="input-detail" >
-                    <input type="text" required>
-                    <label>USERNAME</label>      
-                </div>
-                <div class="input-detail">
-                    <input type="password" required>
-                    <label>EMAIL</label>
-                </div>
-                <div class="input-detail">
-                    <input type="password" required>
-                    <label>MOBILE_NUMBER</label>
-                </div>
-                <div class="input-detail">
-                    <input type="password" required>
-                    <label>PASSWORD</label>
-                </div>
-                 <button class="btnsubmit" type="submit">Sign Up
-                 </button>
-
-                 <div class="login-link">
-                    <p>Don't have an account ?
-                    <a href="http://localhost/git/Health-card/login.html" class="log-in">Log in</a></p>
-                </div>
+                <form action="" class="signup-form">
+                    <h2 class="title">Sign Up</h2>
+                    <div class="input-field">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                     <button class="btnsubmit" type="submit">Sign In
+                    </button> 
+                    <div class="login-link">
+                        <p>Already have an account?
+                        <a href="login.html" class="log-in">Login</a></p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div> 
             </form>
             
         </div>
