@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Insurance Registration Form</h1>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <h2>Personal Information</h2>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name"  placeholder="Enter First name" name="firgit st-name" required>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" placeholder="Enter last name" name="last-name" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email id" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter mobile number" name="phone" required>
+            
+            <h2>Address</h2>
+            <label for="street">Street Address:</label>
+            <input type="text" id="street" placeholder="Enter your address" name="street" required>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" placeholder="Enter your city" name="city" required>
+            
+            <label for="state">State:</label>
+            <input type="text" id="state" placeholder="Enter your state" name="state" required>
+            
+            <label for="zip">Pin Code:</label>
+            <input type="text" id="zip" placeholder="Enter pincode" name="zip" required>
+            
+            <h2>Insurance Information</h2>
+            <label for="policy-type">Policy Type:</label>
+            <input type="text" id="policy-type" name="policy-type" placeholder="e.g. individual, family, group" required>
+            
+            <label for="coverage-start">Coverage Start Date:</label>
+            <input type="date" id="coverage-start" name="coverage-start" required>
+            
+            <label for="coverage-end">Coverage End Date:</label>
+            <input type="date" id="coverage-end" name="coverage-end">
+            
+            <h2>Dependents (if applicable)</h2>
+            <label for="dependent1-name">Dependent 1 - Name:</label>
+            <input type="text" id="dependent1-name" name="dependent1-name">
+            
+            <label for="dependent1-dob">Dependent 1 - Date of Birth:</label>
+            <input type="date" id="dependent1-dob" name="dependent1-dob">
+            
+            <label for="dependent1-relation">Dependent 1 - Relationship:</label>
+            <input type="text" id="dependent1-relation" name="dependent1-relation">
+            
+            <label for="dependent2-name">Dependent 2 - Name:</label>
+            <input type="text" id="dependent2-name" name="dependent2-name">
+            
+            <label for="dependent2-dob">Dependent 2 - Date of Birth:</label>
+            <input type="date" id="dependent2-dob" name="dependent2-dob">
+            
+            <label for="dependent2-relation">Dependent 2 - Relationship:</label>
+            <input type="text" id="dependent2-relation" name="dependent2-relation">
+            
+            <h2>Upload Required Documents</h2>
+            <label for="id-upload">Government Issued ID:</label>
+            <input type="file" id="id-upload" name="id-upload" accept="image/*" required>
+            
+            <label for="income-upload">Proof of Income:</label>
+            <input type="file" id="income-upload" name="income-upload" accept="image/*" required>
+            
+            <label for="medical-upload">Medical Records (if applicable):</label>
+            <input type="file" id="medical-upload" name="medical-upload" accept="image/*">
+            
+            <h2>Payment Information</h2>
+            <label for="payment-method">Payment Method:</label>
+            <input type="text" id="payment-method" name="payment-method" placeholder="e.g. credit card, bank transfer" required>
+            
+            <label for="payment-frequency">Payment Frequency:</label>
+            <input type="text" id="payment-frequency" name="payment-frequency" placeholder="e.g. monthly, quarterly" required>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I have read and agree to the terms and conditions of the health insurance policy.</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
