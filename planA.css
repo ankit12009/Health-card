@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+   
+}
+.left-section, .right-section {
+    background-color:#fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(98, 94, 94, 0.3);
+}
+
+.left-section {
+    width: 68%;
+}
+.right-section {
+    width: 25%;
+    height:60%;
+}
+.left-section .close-btn{
+    position: absolute;
+    top:30px;
+    left:66%;
+    cursor: pointer;
+    font-weight: 600;
+    font-size:1.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}  
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.plan-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.plan-title img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    
+}
+.tab_active a{
+    text-decoration: none;
+    color:#000000;
+}
+.tab_active a:hover{
+    color: #007bff;
+    border-bottom: 2px solid #007bff; 
+}
+
+.highlights {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.highlight {
+    background-color:#e1f6ff; 
+    border-radius: 20px;
+    padding: 10px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0px 10px rgba(218, 211, 211, 0.5);
+}
+.highlight i {
+    color: #ffe312;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.highlight p{
+    color:#6c757d;
+}
+.coverage {
+    margin-bottom: 20px;
+}
+.coverage h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.coverage p{
+    color: #6c757d;
+}
+.coverage-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.coverage-item i {
+    color: #4caf53;
+    margin-right: 10px;
+}
+
+.summary {
+    text-align: center;
+}
+.summary .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.summary .details {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.summary-item span {
+    font-size: 16px;
+}
+.summary .details .amount {
+    font-size: 20px;
+    font-weight: bold;
+}
+.summary .details .monthly {
+    background-color:#e1f6ff; 
+    border-radius: 10px;
+    padding: 10px;
+    color: #6c757d;
+}
+.summary .benefits {
+    background-color: #358ff0;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0px 10px rgba(7, 0, 0, 0.5);
+}
+
+.summary .button {
+    background-color:  #28A745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*Mobile Styles */
+ @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .left-section, .right-section {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .left-section .close-btn {
+        top: 10px;
+        left: 95%;
+        font-size: 1.2rem;
+    }
+    .header {
+        font-size: 20px;
+    }
+    .tabs {
+        flex-direction:column;
+    }
+    .highlights {
+        flex-direction: column;
+    }
+    .highlight {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .summary .title {
+        font-size: 24px;
+    }
+    .summary-item {
+        font-size: 14px;
+    }
+    .summary .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .tabs {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .tab_active {
+        margin: 0 5px;
+    }
+    .monthly, .benefits {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .summary .details .amount {
+        font-size: 18px;
+    }
+}
