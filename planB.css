@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #ff7700;
     margin: 0;
     padding: 0;
 }
@@ -16,21 +16,38 @@ body {
     box-shadow: 0 0 10px rgba(98, 94, 94, 0.3);
 }
 .left-section {
+    background-color:#ffffff;
+    border-radius: 10px;
+    padding: 20px;
     width: 68%;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px rgba(210, 211, 230, 0.5);
 }
+
 .right-section {
-    width: 25%;
-    height:60%;
+     width: 25%;
+     height:60%;
+    display:block;
+    justify-content: space-between;
 }
-.left-section .close-btn{
+.right-section1, .right-section2{
+    background-color:#ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(210, 211, 230, 0.6);
+}
+.close-btn a{
     position: absolute;
+    text-decoration: none;
+    color: #000000;
     top:30px;
     left:66%;
     cursor: pointer;
     font-weight: 600;
     font-size:1.5rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}  
+}   
 .header {
     font-size: 24px;
     font-weight: bold;
@@ -157,60 +174,43 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
+.summary a{
+    text-decoration: none;
+    color:#000000;
+}
+.summary a:hover{
+    color: #007bff; 
+}
+.summary p{
+    color:#6c757d;
+}
 /*Mobile Styles */
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
-        padding: 10px;
+        padding: 20px;
     }
     .left-section, .right-section {
-        width: 100%;
+        width: 95%;
         padding: 15px;
         margin-bottom: 20px;
     }
-    .left-section .close-btn {
-        top: 10px;
-        left: 95%;
+    .close-btn a {
+        top: 30px;
+        left: 90%;
         font-size: 1.2rem;
     }
     .header {
         font-size: 20px;
     }
     .tabs {
-        flex-direction: column;
+        flex-direction:column;
     }
     .highlights {
         flex-direction: column;
     }
     .highlight {
-        width: 100%;
-        margin: 5px 0;
-    }
-}
-/* Extra Small Devices */
-@media (max-width: 480px) {
-    .summary .title {
-        font-size: 24px;
-    }
-    .summary-item {
-        font-size: 14px;
-    }
-    .summary .button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-    .tabs {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-    .tab_active {
-        margin: 0 5px;
-    }
-    .monthly, .benefits {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-    .summary .details .amount {
-        font-size: 18px;
+        width: 95%;
+        margin: 5px ;
     }
 }

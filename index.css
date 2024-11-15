@@ -1,42 +1,86 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header .logo{
-    background:#007BFF;
-    color: rgb(22, 21, 21);
-    padding: 1em 0;
-    text-align: center;
+/* Header Styling */
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background:#0077ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    display:flex;
+    justify-content: right;
+    gap: 20px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    list-style-type: none;
+    display: inline-block;
+    padding: 12px;
+    position: relative;
 }
 
-nav a {
-    color: white;
+nav ul li a {
     text-decoration: none;
+    color: #f7f7f7;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
 }
 
+/* nav ul li a:hover {
+    color: #007bff;
+} */
+
+/* Hero Section */
 .hero {
-    background: url("images/h4.jpg") no-repeat center center/cover;
-    color: rgb(14, 15, 15);
-    /* height: 500px; */
-    padding: 100px 20px;
-    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url('images/h4.jpg'); /* Add your hero image path */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: #000000;
     object-fit: cover;
 }
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
 
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
 .benefits, .plans, .testimonials, .cta-section {
-    padding: 20px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -56,32 +100,231 @@ nav a {
     
 }
 
-.plan-card {
-    border: 1px solid #007BFF;
-    padding: 20px;
-    margin: 20px;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    font-size: 28px;
+    color: #333;
     display: inline-block;
+    position: relative;
+}
+.header h1::before,
+.header h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background-color:#0077ff
+}
+.header h1::before {
+    left: -60px;
+}
+.header h1::after {
+    right: -60px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.content .text {
+    width: 60%;
+}
+.content .text p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.content .text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.content .text ul li {
+    margin-bottom: 10px;
+}
+.content .image {
+    width: 35%;
+    text-align: center;
+}
+.content .image img {
+    max-width: 100%;
+}
+.content .image .labels {
+    position: relative;
+    top: -50px;
+}
+.content .image .labels .label {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color:#218838;
+}
+
+.content .image .labels .label1 {
+    bottom: 100px;
+    left: 30px;
+}
+.content .image .labels .label2 {
+    bottom: 220px;
+    right: 30px;
+}
+.content .image .labels .label3 {
+    bottom: 20px;
+    left: 50px;
+}
+.content .image .labels .label4 {
+    bottom: 60px;
+    right: 30px;
+}
+
+
+.plan-card {
+    padding: 30px;
+    margin: 25px; 
+    display: inline-block;
+    /* background-color:#e1f6ff;  */
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0px 10px rgba(82, 78, 78, 0.5);
+}
+.plan-card p{
+    color: #696b6e;
 }
 
 .cta-button {
     display: inline-block;
-    background: #28A745;
-    color: white;
+    background-color: #28a745;
+    color: #fff;
     padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
-}
-
-footer {
-    background: #007BFF;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.social-media a {
-    color: white;
-    margin: 0 10px;
     text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 5px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+
+.customercontainer {
+    text-align: center;
+    padding:50px;
+}
+.customerheader {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+} 
+.subheader {
+    font-size: 18px;
+    color: #666;
+    margin: 30px;
+}
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    position: relative;
+}
+.testimonial .quote {
+    font-size: 40px;
+    color: #0056b3;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.testimonial p {
+    font-size: 16px;
+    color:#666;
+    margin: 40px 0 20px 0;
+}
+.testimonial .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial .profile img {
+    border-radius: 50%;
+    border: 3px solid #0056b3;
+    width: 80px;
+    height: 80px;
+}
+.testimonial .profile .name {
+    font-size: 16px;
+    font-weight: 600;
+    color:#333;
+    margin-top: 10px;
+}
+/* Footer Styles */
+footer {
+    background-color: #0077ff;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 14px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px 40px;
+}
+.footer-section {
+    width: 30%;
+}
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.footer-section p, .footer-section a {
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer-section a {
+    text-decoration: none;
+}
+/* .footer-section a:hover {
+    color: #358ff0;
+} */
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+.links ul li {
+    margin-bottom: 10px;
+}
+.social-media .social-icon {
+    color: #ddd;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px 40px;
+    border-top: 1px solid #ddd;
+}
+.footer-bottom p {
+    margin: 5px 0;
+    color: #ddd;
 }

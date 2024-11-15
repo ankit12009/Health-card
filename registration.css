@@ -5,12 +5,12 @@
 }
 
 body {
-    /* background-image:linear-gradient(to right,rgba(255,0,0,0), #33a1d7); */
-    background: url(https://images.pexels.com/photos/4021810/pexels-photo-4021810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+     background: url(images/bg.jpg);
+    /* background: url(https://images.pexels.com/photos/4021810/pexels-photo-4021810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
     background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: 'Arial', sans-serif;
+    background-position:center;
+    background-repeat:no-repeat;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +19,7 @@ body {
 
 .container {
     background-color: rgba(255, 255, 255, 0.85);
+ 
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -40,9 +41,15 @@ h2 {
 
 label {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     display: block;
-    color: rgb(81, 78, 78);
+    border: none;
+    outline:none;
+    background: none;
+    font-size: 18px;
+    color:#555;
+    padding: 20px 10px 15px 5px;
+    width:100%
 }
 
 input[type="text"],
@@ -51,16 +58,30 @@ input[type="email"],
 input[type="tel"],
 input[type="file"] {
     width: 100%;
-    padding: 10px;
+    height:50px;
+    padding: 20px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border:none;
+    border-radius: 15px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
 }
 
 input[type="file"] {
-    padding: 8px;
+    padding: 15px;
 }
-
+.container input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 1.0rem;
+    color: #333;
+}
+.container::placeholder{
+    color: #aaa;
+    font-weight: 500;
+}
 .terms {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -68,15 +89,20 @@ input[type="file"] {
 }
 
 .submit-btn {
-    background-color:  #007BFF;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 100%;
+    width: 96%;
+    height: 60px;
+    margin: 0px 12px;
+    border-radius: 30px;
+    font-size: 20px;;
+    font-weight: 700;
+    outline: none;
+    border:none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    color:#fff;
+    text-align: center;
+    background: #F44770;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: .5s;
 }
 
 .submit-btn:hover {
