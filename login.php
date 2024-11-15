@@ -19,7 +19,7 @@
             }
              else{
                 echo "<script>alert('Login successful!');</script>";
-                header('location:index.html');
+                header('location:index2.html');
              }
         }
          else {
