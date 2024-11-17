@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#e9f7ff ;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.close-btn a{
+    position: absolute;
+    text-decoration: none;
+    color: #000000;
+    top:30px;
+    left:90%;
+    cursor: pointer;
+    font-weight: 600;
+    font-size:1.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}  
+.header h1 {
+    margin:10px;
+    color: #003c7b;
+    font-size: 40px;
+    text-align:center;
+    padding: 10px;
+    font-family:roboto;
+}
+.header a.active {
+    border-bottom: 2px solid #000;
+}
+.announcement {
+    background-color: #ffe6e6;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #c10a04;
+}
+.announcement a {
+    color: #d9534f;
+    text-decoration: underline;
+}
+.search-section {
+    background-color:#e1e8f0 ;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.search-section h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+.search-section h2 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.download-list {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+.download-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+.top-hospitals, .more-hospitals {
+    margin: 20px 0;
+}
+.top-hospitals h3, .more-hospitals h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.top-hospitals p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.hospital-list {
+    display: flex;
+    justify-content: space-between;
+}
+.hospital-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+.hospital-card h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+.hospital-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+.hospital-card .claim-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.hospital-card .claim-info i {
+    color: #007bff;
+    margin-right: 5px;
+}
+.hospital-card .claim-info span {
+    font-size: 14px;
+    color: #333;
+}
+.hospital-card .claim-info a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.more-hospitals h3{
+    margin: 40px;
+    color: #007bff; 
+    text-align: center; 
+    font-size: 28px;
+}
+.more-hospitals-list {
+    display: flex;
+    justify-content: space-between;
+}
+.more-hospitals-list .hospital-column {
+    width: 48%;
+    
+}
+.more-hospitals-list .hospital-item {
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+.more-hospitals-list .hospital-item p {
+    margin: 0;
+    font-size: 15px;
+    color: #2c2c2c;
+}
+.more-hospitals-list .hospital-item p:first-child {
+    font-weight: 500;
+}

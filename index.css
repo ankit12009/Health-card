@@ -2,86 +2,134 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /* Header Styling */
+
 header {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background:#0077ff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    display: flex;                       /* Flexbox layout */
+    justify-content: space-between;       /* Space between logo and nav */
+    align-items: center;                  /* Vertically align logo and nav */
+    padding: 10px 20px;                   /* Padding around the header */
+    background-color:#007BFF            /* Background color for header */
 }
 
-.header-container {
-    max-width: 100%;
-    margin: auto;
-    padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logo img {
+    max-height: 70px;                     /* Set maximum height of the logo */
+    width: auto; 
+    border-radius: 50%;  
+    margin-left: 10px;   
+                          
+}
+nav .name{
+    color: aliceblue;
+    font-size: 18px;
+    margin-left: 10px;   
 }
 
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
+nav {
+    display: flex;                        /* Flexbox for navigation */
+    align-items: center;                  /* Vertically center nav items */
 }
 
 nav ul {
-    display:flex;
-    justify-content: right;
-    gap: 20px;
+    list-style: none;                     /* Remove list-style */
+    display: flex;                         /* Arrange nav items horizontally */
+    margin-left: 20px;                     /* Space between the menu items */
 }
 
 nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 12px;
-    position: relative;
+    margin-left: 20px;                    /* Add spacing between menu items */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #f7f7f7;
-    font-weight: 500;
-    padding: 8px 12px;
-    transition: color 0.3s ease;
+    text-decoration: none;                /* Remove underline */
+    color: #fff;                          /* Set text color */
+    font-weight: 500;                     /* Set font weight */
+    font-size: 18px;                      /* Set font size */
+    transition: color 0.3s ease;          /* Smooth transition for hover */
 }
 
-/* nav ul li a:hover {
-    color: #007bff;
-} */
+nav ul li a:hover {
+    color:white;                       /* Change color on hover */
+}
+
+/* Mobile - Hide the menu and show the hamburger icon */
+.menu-icon {
+    display: none;                        /* Initially hide the hamburger icon */
+    font-size: 30px;                      /* Set icon size */
+    cursor: pointer;  
+    margin-left: 50px;                    /* Make it clickable */
+}
+
+/* Mobile Navigation (Hamburger) */
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;    /* Space between logo and menu icon */
+        width: 100%;                        /* Ensure the navigation stretches full width */
+    }
+
+    nav ul {
+        display: none;                     /* Hide menu items by default on mobile */
+        flex-direction: column;            /* Stack menu items vertically */
+        width: 100%;                        /* Make menu take full width */
+        padding:10px 0;                    /* Add padding around the menu */
+    }
+
+    nav ul li {
+        margin: 10px 0;                     /* Vertical space between items */
+        text-align: center;                 /* Center the menu items */
+    }
+
+    nav ul.active {
+        display: flex;                      /* Show menu when active */
+    }
+
+    .menu-icon {
+        display: block;                     /* Show the hamburger icon on mobile */
+    }
+
+    nav ul li a {
+        font-size: 18px;                     /* Larger font size on mobile */
+    }
+}
 
 /* Hero Section */
 .hero {
     position: relative;
     width: 100%;
     height: 90vh;
-    background-image: url('images/h4.jpg'); /* Add your hero image path */
+    background-image: url('images/header.jpg'); /* Add your hero image path */
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items:center;
-    justify-content: center;
+    justify-content: left;
+    
     color: #000000;
     object-fit: cover;
 }
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 5.5rem;
     margin-bottom: 10px;
+    color:rgb(43, 43, 43);
+    margin-left: 60px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
 .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 2.0rem;
+    color:rgb(43, 43, 43);
+    margin-left: 80px;
+    margin-bottom: 10px;
     max-width: 600px;
 }
 .benefits, .plans, .testimonials, .cta-section {
     padding: 40px 20px;
     text-align: center;
+
 }
 
 .benefit-list {
@@ -206,11 +254,12 @@ nav ul li a {
     display: inline-block;
     background-color: #28a745;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 25px;
+    border-radius: 15px;
     text-decoration: none;
     font-weight: bold;
     margin-top: 20px;
+    margin-left: 70px;
     box-shadow: 0 5px 20px;
     transition: background-color 0.3s ease;
 }

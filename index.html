@@ -11,24 +11,45 @@
 
     <!-- Header Section -->
     <header>
-        <div class="logo">[Company Logo]
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Health Insurance Company Logo">
+            
+        </div>
         <nav>
-            <ul>
+            <!-- <div class="name">
+                <h2>True Wealth</h2>
+            </div> -->
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i> <!-- Hamburger Icon -->
+            </div>
+        
+            <ul id="nav-links">
                 <li><a href="http://localhost/git/Health-card/about.html">About Us</a></li>
                 <li><a href="#plans">Plans & Pricing</a></li>
                 <li><a href="#quote">Get a Quote</a></li>
                 <li><a href="http://localhost/git/Health-card/contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        </div>
+    </header>
+
+    <script>
+        // JavaScript for toggling the hamburger menu
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Toggle the visibility of navigation links
+        });
+    </script>
     </header>
 
     <!-- Hero Section -->
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Get the Best Health Insurance Plans for You and Your Loved Ones</h1>
-            <p>Our comprehensive health insurance plans provide financial protection and peace of mind</p>
+            <h1>True Wealth</h1>
+            <p>Because Health is Wealth</p>
+            <p>Nothing last forever, but we will</p>
             <a href="http://localhost/git/Health-card/login.html" class="cta-button">Register Now</a>
         </div>
     </section>
@@ -68,7 +89,7 @@
         <div class="content">
             <div class="text">
                 <p>
-                    A health insurance policy is a financial safety shield that protects you and your family during medical emergencies. It comes with several benefits such as paying your medical bills including pre and post-hospitalization expenses, protect your savings and get tax benefits. Buy the best mediclaim policy from HDFC ERGO which will help you manage the rising medical costs during emergencies and have below features:
+                    A health insurance policy is a financial safety shield that protects you and your family during medical emergencies. It comes with several benefits such as paying your medical bills including pre and post-hospitalization expenses, protect your savings and get tax benefits. Buy the best mediclaim policy from Trust Wealth which will help you manage the rising medical costs during emergencies and have below features:
                 </p>
                 <ul>
                     <li>Cashless Networks: 16,000+ across Indiaˇ</li>
@@ -93,7 +114,7 @@
     <section id="plans" class="plans">
         <h2>Our Health Insurance Plans</h2>
         <div class="plan-card">
-            <h3>Basic Plan ($299/month)</h3><br>
+            <h3>Basic Plan (₹732/month )</h3><br>
             <p>Essential coverage for individuals and families</p>
             <br>
             <ul>
@@ -104,7 +125,7 @@
             <a href="planA1.html">Know more</a>
         </div>
         <div class="plan-card">
-            <h3>Premium Plan ($999/month)</h3>
+            <h3>Premium Plan (₹605/month)</h3>
             <br>
             <p>Enhanced coverage for individuals and families</p><br>
             <ul>
@@ -114,7 +135,7 @@
             <a href="planB1.html">Know more</a>
         </div>
         <div class="plan-card">
-            <h3>Elite Plan ($1299/month)</h3>
+            <h3>Elite Plan ( ₹2,769/month)</h3>
             <br>
             <p>Comprehensive coverage for individuals and families</p><br>
             <ul>

@@ -5,27 +5,21 @@ body {
     padding: 0;
 }
 .container {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     padding: 20px ;
-}
-.left-section, .right-section {
-    background-color:#fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(98, 94, 94, 0.3);
+   
 }
 .left-section {
     background-color:#ffffff;
     border-radius: 10px;
     padding: 20px;
-    width: 68%;
     margin-bottom: 10px;
+    width: 68%;
     box-shadow: 5px 5px 10px rgba(210, 211, 230, 0.5);
 }
-
 .right-section {
-     width: 25%;
+     width: 28%;
      height:60%;
     display:block;
     justify-content: space-between;
@@ -47,7 +41,7 @@ body {
     font-weight: 600;
     font-size:1.5rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}   
+}  
 .header {
     font-size: 24px;
     font-weight: bold;
@@ -73,8 +67,8 @@ body {
     cursor: pointer;
     font-weight: bold;
     font-size: 1.1rem;
+    
 }
-
 .tab_active a{
     text-decoration: none;
     color:#000000;
@@ -104,9 +98,8 @@ body {
     margin-bottom: 10px;
 }
 .highlight p{
-    color:#6c757d
+    color:#6c757d;
 }
-
 .coverage {
     margin-bottom: 20px;
 }
@@ -139,6 +132,7 @@ body {
     font-size: 16px;
     margin-bottom: 20px;
 }
+
 .summary-item {
     display: flex;
     justify-content: space-between;
@@ -165,6 +159,7 @@ body {
     margin-bottom: 20px;
     box-shadow: 0 0px 10px rgba(7, 0, 0, 0.5);
 }
+
 .summary .button {
     background-color:  #28A745;
     color: #fff;
@@ -173,6 +168,16 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+.summary .more{
+    text-align:center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.summary h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 .summary a{
     text-decoration: none;
@@ -184,8 +189,9 @@ body {
 .summary p{
     color:#6c757d;
 }
+
 /*Mobile Styles */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .container {
         flex-direction: column;
         padding: 20px;
