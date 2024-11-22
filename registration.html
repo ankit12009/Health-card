@@ -10,13 +10,13 @@
     <div class="container">
         <h1>Health Insurance Registration Form</h1>
 
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form action="registration.php" method="post" enctype="multipart/form-data">
             <h2>Personal Information</h2>
             <label for="first-name">First Name:</label>
-            <input type="text" id="first-name"  placeholder="Enter First name" name="firgit st-name" required>
+            <input type="text" id="first-name"  placeholder="Enter First name" name="fname" required>
             
             <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" placeholder="Enter last name" name="last-name" required>
+            <input type="text" id="last-name" placeholder="Enter last name" name="lname" required>
             
             <label for="dob">Date of Birth:</label>
             <input type="date" id="dob" name="dob" required>
@@ -42,56 +42,57 @@
             
             <h2>Insurance Information</h2>
             <label for="policy-type">Policy Type:</label>
-            <input type="text" id="policy-type" name="policy-type" placeholder="e.g. individual, family, group" required>
+            <input type="text" id="policy-type" name="ptype" placeholder="e.g. individual, family, group" required>
             
             <label for="coverage-start">Coverage Start Date:</label>
-            <input type="date" id="coverage-start" name="coverage-start" required>
+            <input type="date" id="coverage-start" name="cstart" required>
             
             <label for="coverage-end">Coverage End Date:</label>
-            <input type="date" id="coverage-end" name="coverage-end">
+            <input type="date" id="coverage-end" name="cend">
             
             <h2>Dependents (if applicable)</h2>
             <label for="dependent1-name">Dependent 1 - Name:</label>
-            <input type="text" id="dependent1-name" name="dependent1-name">
+            <input type="text" id="dependent1-name" name="dname">
             
             <label for="dependent1-dob">Dependent 1 - Date of Birth:</label>
-            <input type="date" id="dependent1-dob" name="dependent1-dob">
+            <input type="date" id="dependent1-dob" name="ddob">
             
             <label for="dependent1-relation">Dependent 1 - Relationship:</label>
-            <input type="text" id="dependent1-relation" name="dependent1-relation">
+            <input type="text" id="dependent1-relation" name="drelation">
             
             <label for="dependent2-name">Dependent 2 - Name:</label>
-            <input type="text" id="dependent2-name" name="dependent2-name">
+            <input type="text" id="dependent2-name" name="dnameA">
             
             <label for="dependent2-dob">Dependent 2 - Date of Birth:</label>
-            <input type="date" id="dependent2-dob" name="dependent2-dob">
+            <input type="date" id="dependent2-dob" name="ddobA">
             
             <label for="dependent2-relation">Dependent 2 - Relationship:</label>
-            <input type="text" id="dependent2-relation" name="dependent2-relation">
+            <input type="text" id="dependent2-relation" name="drelationA">
             
             <h2>Upload Required Documents</h2>
             <label for="id-upload">Government Issued ID:</label>
-            <input type="file" id="id-upload" name="id-upload" accept="image/*" required>
+            <input type="file" id="id-upload" name="id" accept="image/*" required>
             
             <label for="income-upload">Proof of Income:</label>
-            <input type="file" id="income-upload" name="income-upload" accept="image/*" required>
+            <input type="file" id="income-upload" name="income" accept="image/*" required>
             
             <label for="medical-upload">Medical Records (if applicable):</label>
-            <input type="file" id="medical-upload" name="medical-upload" accept="image/*">
+            <input type="file" id="medical-upload" name="mupload" accept="image/*">
             
             <h2>Payment Information</h2>
             <label for="payment-method">Payment Method:</label>
-            <input type="text" id="payment-method" name="payment-method" placeholder="e.g. credit card, bank transfer" required>
+            <input type="text" id="payment-method" name="pmethod" placeholder="e.g. credit card, bank transfer" required>
             
             <label for="payment-frequency">Payment Frequency:</label>
-            <input type="text" id="payment-frequency" name="payment-frequency" placeholder="e.g. monthly, quarterly" required>
+            <input type="text" id="payment-frequency" name="pfrequency" placeholder="e.g. monthly, quarterly" required>
 
             <div class="terms">
                 <input type="checkbox" id="terms" name="terms" required>
                 <label for="terms">I have read and agree to the terms and conditions of the health insurance policy.</label>
             </div>
 
-            <button type="submit" class="submit-btn">Submit</button>
+            <!-- <button type="submit" class="submit-btn">Submit</button> -->
+            <input class="submit-btn" type="submit" name="submit" value ="Submit">
         </form>
     </div>
 </body>
