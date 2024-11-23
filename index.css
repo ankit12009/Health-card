@@ -121,6 +121,8 @@ nav ul li a:hover {
 }
 .hero-content p {
     font-size: 2.0rem;
+    font-weight: 600;
+    font-family: lato;
     color:rgb(43, 43, 43);
     margin-left: 80px;
     margin-bottom: 10px;
@@ -147,7 +149,19 @@ nav ul li a:hover {
     padding: 20px;
     
 }
+@media (max-width: 760px) {
+    .benefit-item {
+        width: 100%; /* One item per row on smaller screens */
+    }
 
+    .benefit-item img {
+        margin-bottom: 15px;
+    }
+
+    .benefit-item p {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+}
 
 .container {
     max-width: 1200px;
@@ -241,13 +255,21 @@ nav ul li a:hover {
     padding: 30px;
     margin: 25px; 
     display: inline-block;
-    /* background-color:#e1f6ff;  */
+    background-color:#e1f6ff; 
     border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 0px 10px rgba(82, 78, 78, 0.5);
+    text-align: left;
+    box-shadow: 9px 9px 12px lightblue;
+    /* box-shadow: 0 0px 10px rgba(82, 78, 78, 0.5); */
 }
 .plan-card p{
-    color: #696b6e;
+    color: #545556;
+}
+.plan-card a{
+    color: #545556;
+    text-decoration: none;
+}
+.plan-card a:hover{
+    color: #007bff; 
 }
 
 .cta-button {
