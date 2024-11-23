@@ -100,16 +100,16 @@ input[type="file"] {
     cursor: pointer;
     color:#fff;
     text-align: center;
-    background: #F44770;
+    background: #007bff;;
     box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
     transition: .5s;
 }
 
 .submit-btn:hover {
-    background-color: #014893;
+    background-color: crimson;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
     .container {
         padding: 20px;
     }
