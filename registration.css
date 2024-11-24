@@ -16,7 +16,17 @@ body {
     align-items: center;
     height: 100%;
 }
-
+.close-btn a{
+    position: absolute;
+    text-decoration: none;
+    color: #000000;
+    top:30px;
+    left:90%;
+    cursor: pointer;
+    font-weight: 600;
+    font-size:2.0rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
 .container {
     background-color: rgba(255, 255, 255, 0.85);
  
