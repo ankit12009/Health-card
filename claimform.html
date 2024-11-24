@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Form</title>
+    <link rel="stylesheet" href="claimform.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Insurance Claim Form</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="hospital">Hospital Name:</label>
+            <input type="text" id="hospital" name="hospital" placeholder="Enter the hospital name" required>
+
+            <label for="disease">Disease/Condition:</label>
+            <input type="text" id="disease" name="disease" placeholder="Enter the disease or condition" required>
+
+            <label for="claimAmount">Claim Amount:</label>
+            <input type="number" id="claimAmount" name="claimAmount" placeholder="Enter the claim amount" required>
+
+            <label for="image">Upload Relevant Documents:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit">Submit Claim</button>
+        </form>
+    </div>
+</body>
+</html>
