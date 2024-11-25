@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="claim.css">
 </head>
 <body>
+    <form action="claim.php" method="post">
     <span class="close-btn symbol"><a href = "http://localhost/git/Health-card/index.html" >X</a></span>
     <div class="container">
         
@@ -17,14 +18,14 @@
             <p>To receive the quote please enter your use name and claim id🔒</p>
             <div class="input-group">
                 <i class="fas fa-user"></i>
-                <input placeholder="Username" type="text" />
+                <input placeholder="phone" name="phone" type="text" />
             </div>
             <div class="input-group">
                 <i class="fas fa-lock"></i>
-                <input placeholder="Claim_id" type="text" />
+                <input placeholder="Claim_id" name="id" type="text" />
             </div>
             <div class="buttons">
-                <button class="submit">Submit</button>
+                <input class="submit" type="submit" name="submit" value ="Claim">
             </div>
             <div class="social-icon">
                 <a href="#"><i class="fab fa-google"></i></a>
@@ -34,5 +35,6 @@
             </div>
         </div>
     </div>
+</form>
 </body>
 </html>
