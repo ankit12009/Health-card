@@ -8,8 +8,16 @@
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background: url(images/themebg.jpg);
+    background-size:cover;
+    background-attachment: fixed; 
+    background-position:center;
+    background-repeat:no-repeat;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
 }
 
 /* Container for the form */
@@ -18,10 +26,13 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    /* background:transparent;  */
+    background: rgba(166, 228, 255, 0.15);
+    /* backdrop-filter:blur(10px); */
 }
+
 
 /* Close button */
 .close-btn {
@@ -44,6 +55,8 @@ h2 {
 p {
     text-align: center;
     margin-bottom: 20px;
+    color: #535050;
+    
 }
 
 /* Fieldset styling */
@@ -53,11 +66,18 @@ fieldset {
     padding: 10px;
     margin-bottom: 20px;
 }
+label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #535050;
+}
 
 /* Legend styling */
 legend {
     font-weight: bold;
     padding: 0 10px; /* Add some padding around the legend */
+    font-size: larger;
 }
 
 /* Input fields */
@@ -65,13 +85,20 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="date"],
-textarea,
-input[type="file"] {
-    width: 100%;
+input[type="file"],
+textarea{
+
+    width: 98%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-bottom: 18px;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 9px 9px 12px rgb(218, 244, 253);
+    outline: none;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #535050; 
 }
 
 /* Textarea styling */
@@ -92,7 +119,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color:crimson; /* Darker green on hover */
 }
 
 /* Responsive adjustments */

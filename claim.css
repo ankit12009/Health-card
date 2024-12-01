@@ -1,34 +1,42 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #c4e6e7;
+    background-image: url(images/themebg.jpg);
+    background-size:cover;
+    background-attachment: fixed; 
+    background-position:center;
+    background-repeat:no-repeat;
+    /* background-color: #c4e6e7; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.close-btn a {
-    position: absolute;
-    text-decoration: none;
-    color: #000000;
-    top:30px;
-    left:85%;
-    cursor: pointer;
-    font-weight: 600;
-    font-size:2.0rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} 
-
-
 .container {
-    background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
     display: flex;
     padding: 40px;
     max-width: 900px;
     width: 100%;
+    height: fit-content;
+}
+.close-btn {
+    float: right;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.close-btn a {
+    position: absolute;
+    text-decoration: none;
+    top:30px;
+    left:85%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ff0000; /* Red color for close button */
 }
 .illustration {
     flex: 1;
@@ -118,13 +126,15 @@ body {
     background-color: #007bff;
 }
 
-@media (max-width: 760px) {
+ @media (max-width: 760px) {
     .container {
         flex-direction: column;
         padding: 10px;
+        background: transparent;
     }
 
     .illustration {
         margin-bottom: 20px;
     }
-} 
+}  
+
